@@ -22,13 +22,13 @@ El caso parte de dos fuentes de datos (ventas transaccionales y objetivos mensua
 
 ### 1. Transformación de datos (Power Query)
 
-Pasos aplicados sobre la tabla **Ventas**, según la configuración de consulta:
+Pasos aplicados sobre la tabla **Ventas**:
 
 1. Conexión al origen y navegación a la hoja.
 2. Promoción de encabezados y eliminación de filas superiores.
 3. Cambio de tipos de datos (número entero, fechas, decimales).
 4. Eliminación de columnas innecesarias.
-5. Conversión de la **Tasa de Impuesto** dividiendo entre 100 (de `10` o `15` a `0.10` o `0.15`) para poder usarla como porcentaje.
+5. Conversión de la **Tasa de Impuesto** dividiendo entre 100 (de `10` o `15` a `0.10` o `0.15`).
 
 La tabla **Objetivo de ventas** se cargó como segunda consulta, sin transformaciones adicionales.
 
@@ -58,18 +58,16 @@ Medidas creadas en DAX, entre ellas:
 
 ### 4. Dashboard "Resumen de ventas"
 
-El reporte incluye:
-
 - **Tarjetas KPI:** ventas totales (≈ $231.88 millones), ventas con tasa 10% (≈ $1.22 millones) y 15% (≈ $230.66 millones), y número de productos por tasa.
 - **Top 3 clientes:** suma de subtotal, suma total y participación. Juntos representan ≈ 6.32% de las ventas.
-- **Top 10 SKU:** con suma de subtotal, suma total y participación. Juntos representan ≈ 32.55% de las ventas. El SKU 219 es el de mayor peso (≈ 6.59%).
+- **Top 10 SKU:** suma de subtotal, suma total y participación. Juntos representan ≈ 32.55% de las ventas. El SKU 219 es el de mayor peso (≈ 6.59%).
 - **Ventas totales por año:** línea mensual comparando 2016, 2017, 2018 y 2019.
-- **Cumplimiento a ventas 2019:** barras mensuales en % contra el objetivo, con colores según el nivel de cumplimiento (por ejemplo, abril 123%, febrero 83%, diciembre 88%).
+- **Cumplimiento a ventas 2019:** barras mensuales en % contra el objetivo (por ejemplo, abril 123%, febrero 83%, diciembre 88%).
 
 ## Hallazgos principales
 
 - La gran mayoría de las ventas se concentra en la tasa de impuesto del 15%.
-- El cumplimiento de objetivos en 2019 varía mucho según el mes: hay meses por encima del 100% (abril, julio, marzo) y meses claramente por debajo (febrero, diciembre).
+- El cumplimiento de objetivos en 2019 varía mucho según el mes: hay meses por encima del 100% (marzo, abril, julio) y meses por debajo (febrero, diciembre).
 - Los 10 SKU principales explican cerca de un tercio de las ventas, mientras que los 3 clientes principales explican una proporción pequeña, lo que indica una base de clientes diversa.
 
 ## Capturas
@@ -96,12 +94,19 @@ El reporte incluye:
 
 ```
 Caso-Empresarial/
-├── README.md
-└── imagenes/
-    ├── 01-panel-datos-modelo.png
-    ├── 02-dashboard-resumen-ventas.png
-    ├── 03-modelo-estrella.png
-    ├── 04-power-query-ventas.png
-    ├── 05-fuente-ventas-excel.png
-    └── 06-fuente-objetivos-excel.png
+├── CASO 1 & 2.pbix              # Proyecto de Power BI
+├── Caso_Power_BI_v.2/           # Versión 2 del proyecto
+├── Creacion de medidas Dax.png
+├── Dashboard caso de estudio.png
+├── Modelado tipo estrella.png
+├── Tabla de ETL.png
+├── Tabla de hechos.png
+├── Tabla de objetivos.png
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
+
+## Licencia
+
+Este proyecto usa la licencia MIT. Consulta el archivo [LICENSE](LICENSE).
