@@ -105,7 +105,3 @@ Caso-Empresarial/
     ├── 05-fuente-ventas-excel.png
     └── 06-fuente-objetivos-excel.png
 ```
-
-## Pendiente
-
-El archivo `.pbix` / `.pbip` y los Excel fuente no se incluyen aquí. Si quieres subirlos, revisa primero que no contengan datos sensibles y, si el `.pbix` supera 50 MB, usa Git LFS.
