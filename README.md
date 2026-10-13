@@ -75,22 +75,22 @@ El reporte incluye:
 ## Capturas
 
 ### Panel de datos y modelo
-![Panel de datos](imagenes/01-panel-datos-modelo.png)
+![Panel de datos](Creacion%20de%20medidas%20Dax.png)
 
 ### Dashboard de resumen de ventas
-![Dashboard](imagenes/02-dashboard-resumen-ventas.png)
+![Dashboard](Dashboard%20caso%20de%20estudio.png)
 
 ### Modelo de datos (esquema en estrella)
-![Modelo](imagenes/03-modelo-estrella.png)
+![Modelo](Modelado%20tipo%20estrella.png)
 
 ### Power Query: tabla Ventas
-![Power Query](imagenes/04-power-query-ventas.png)
+![Power Query](Tabla%20de%20ETL.png)
 
 ### Fuente Excel: Ventas
-![Fuente ventas](imagenes/05-fuente-ventas-excel.png)
+![Fuente ventas](Tabla%20de%20hechos.png)
 
 ### Fuente Excel: Objetivo de ventas
-![Fuente objetivos](imagenes/06-fuente-objetivos-excel.png)
+![Fuente objetivos](Tabla%20de%20objetivos.png)
 
 ## Estructura del repositorio
 
