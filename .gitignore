@@ -1,0 +1,14 @@
+# Archivos temporales de Office (bloqueo de Excel y Word)
+~$*
+*.tmp
+
+# Archivos temporales y caché de Power BI
+*.pbi/
+*.abf
+cache.abf
+*.pbix.bak
+
+# Archivos del sistema
+Thumbs.db
+desktop.ini
+.DS_Store
